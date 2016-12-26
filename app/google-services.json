@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "915835676818",
+    "firebase_url": "https://ocr-reader-complete.firebaseio.com",
+    "project_id": "ocr-reader-complete",
+    "storage_bucket": "ocr-reader-complete.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915835676818:android:d745e347bf4f46ce",
+        "android_client_info": {
+          "package_name": "com.google.android.gms.samples.vision.barcodereader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915835676818-g27u4tv13o78qckk1p2sqk4uqq1990s4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.android.gms.samples.vision.barcodereader",
+            "certificate_hash": "6A784D55048D4319C464EC6024642ADCB4D00AD1"
+          }
+        },
+        {
+          "client_id": "915835676818-o210354582ehgirakpvusql9tf45eiq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4pUAl13DGcZSpBvVFccTJ9ccBoCrWgbw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915835676818-o210354582ehgirakpvusql9tf45eiq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
