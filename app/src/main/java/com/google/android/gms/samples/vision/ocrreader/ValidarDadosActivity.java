@@ -153,7 +153,12 @@ public class ValidarDadosActivity extends Activity {
     }
 
     public void enviar_dados(View view) {
-        DadosNuvem.salva(cnpj_text.getText() + " " + coo_text.getText() + " " + data_text.getText() + " " + valor_text.getText().subSequence(2, valor_text.getText().length()));
+        DadosNuvem.salva(
+                cnpj_text.getText() + " " +
+                coo_text.getText() + " " +
+                data_text.getText() + " " +
+                valor_text.getText().subSequence(2, valor_text.getText().length()),
+                "CUPOM");
         Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
     }
 }

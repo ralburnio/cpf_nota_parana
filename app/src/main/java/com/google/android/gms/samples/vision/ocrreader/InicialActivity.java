@@ -110,7 +110,7 @@ public class InicialActivity extends Activity {
                     qrCode = matcher.group(1);
                 }
 
-                DadosNuvem.salva(qrCode);
+                DadosNuvem.salva(qrCode, "QR");
             }
         }
         else {
