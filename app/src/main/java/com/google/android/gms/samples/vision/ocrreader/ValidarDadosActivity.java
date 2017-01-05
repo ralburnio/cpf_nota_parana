@@ -11,6 +11,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -149,6 +150,11 @@ public class ValidarDadosActivity extends Activity {
         public void afterTextChanged(Editable s) {
             // Não utilizado
         }
+    }
+
+    public void enviar_dados(View view) {
+        DadosNuvem.salva(cnpj_text.getText() + " " + coo_text.getText() + " " + data_text.getText() + " " + valor_text.getText().subSequence(2, valor_text.getText().length()));
+        Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
     }
 }
 

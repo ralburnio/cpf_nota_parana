@@ -5,30 +5,30 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="890521023846313"
+    timestamp="1756067122617654"
     token="-4789844186605565504"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="909" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1918" />
+        duration="0" />
     <task
         name="verifier"
-        duration="352" />
+        duration="0" />
 
     <artifact
         location="C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="890521023846313"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="1756067122617654"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

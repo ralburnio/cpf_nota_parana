@@ -2790,7 +2790,6 @@ containing a value of this type.
         public static final int beginning=0x7f0c003b;
         public static final int bottom=0x7f0c0029;
         public static final int buttonPanel=0x7f0c0058;
-        public static final int camera_button=0x7f0c007f;
         public static final int cancel_action=0x7f0c0090;
         public static final int center=0x7f0c002a;
         public static final int centerCrop=0x7f0c004b;
@@ -2801,17 +2800,17 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f0c0035;
         public static final int clip_vertical=0x7f0c0036;
         public static final int cnpj_button=0x7f0c00a0;
-        public static final int cnpj_text=0x7f0c0081;
+        public static final int cnpj_text=0x7f0c0080;
         public static final int collapseActionView=0x7f0c0040;
         public static final int contentPanel=0x7f0c005e;
         public static final int coo_button=0x7f0c00a1;
         public static final int coo_text=0x7f0c0083;
-        public static final int cupom_button=0x7f0c007e;
+        public static final int cupom_button=0x7f0c007f;
         public static final int custom=0x7f0c0064;
         public static final int customPanel=0x7f0c0063;
         public static final int dark=0x7f0c0047;
         public static final int data_button=0x7f0c00a2;
-        public static final int data_text=0x7f0c0082;
+        public static final int data_text=0x7f0c0081;
         public static final int decor_content_parent=0x7f0c006d;
         public static final int default_activity_button=0x7f0c0054;
         public static final int design_bottom_sheet=0x7f0c0086;
@@ -2825,6 +2824,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0c009b;
         public static final int enterAlways=0x7f0c001c;
         public static final int enterAlwaysCollapsed=0x7f0c001d;
+        public static final int enviar_button=0x7f0c0084;
         public static final int exitUntilCollapsed=0x7f0c001e;
         public static final int expand_activities_button=0x7f0c0052;
         public static final int expanded_menu=0x7f0c0065;
@@ -2865,7 +2865,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0c0007;
         public static final int radio=0x7f0c0068;
         public static final int right=0x7f0c0030;
-        public static final int scan_button=0x7f0c0080;
+        public static final int scan_button=0x7f0c007e;
         public static final int screen=0x7f0c0023;
         public static final int scroll=0x7f0c001f;
         public static final int scrollIndicatorDown=0x7f0c0062;
@@ -2915,7 +2915,7 @@ containing a value of this type.
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c001b;
         public static final int valor1_button=0x7f0c009f;
-        public static final int valor_text=0x7f0c0084;
+        public static final int valor_text=0x7f0c0082;
         public static final int view_offset_helper=0x7f0c000a;
         public static final int wide=0x7f0c0046;
         public static final int withText=0x7f0c0043;

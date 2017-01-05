@@ -103,24 +103,6 @@ public class InicialActivity extends Activity {
             else {
                 Toast.makeText(this, result.getContents(),Toast.LENGTH_LONG).show();
 
-                // Create a reference
-                FirebaseStorage storage = FirebaseStorage.getInstance();
-
-                // Create a storage reference from our app
-                StorageReference storageRef = storage.getReferenceFromUrl("gs://ocr-reader-complete.appspot.com");
-
-                // Create a reference to file name
-                Calendar date = Calendar.getInstance();
-                String fileName = FirebaseInstanceId.getInstance().getId() +
-                                  Integer.toString(date.get(Calendar.YEAR))+
-                                  Integer.toString(date.get(Calendar.MONTH) + 1) +
-                                  Integer.toString(date.get(Calendar.DAY_OF_MONTH)) +
-                                  Integer.toString(date.get(Calendar.HOUR_OF_DAY)) +
-                                  Integer.toString(date.get(Calendar.MINUTE)) +
-                                  Integer.toString(date.get(Calendar.SECOND)) +
-                                  ".txt";
-                StorageReference qrCodeRef = storageRef.child(fileName);
-
                 String qrCode = result.getContents().toString();
                 Pattern pattern = Pattern.compile("chNFe=(.*?)&nVersao");
                 Matcher matcher = pattern.matcher(qrCode);
@@ -128,21 +110,7 @@ public class InicialActivity extends Activity {
                     qrCode = matcher.group(1);
                 }
 
-                InputStream stream = new ByteArrayInputStream(qrCode.getBytes());
-
-                UploadTask uploadTask = qrCodeRef.putStream(stream);
-                uploadTask.addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception exception) {
-                        // Handle unsuccessful uploads
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                        Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                    }
-                });
+                DadosNuvem.salva(qrCode);
             }
         }
         else {

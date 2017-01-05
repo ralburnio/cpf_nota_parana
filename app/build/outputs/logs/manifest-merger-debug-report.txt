@@ -49,7 +49,7 @@ MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\ronaldo.alburnio\
 MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:15:9-37
+		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:15:9-40
 	android:supportsRtl
 		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:16:9-35
 	android:hardwareAccelerated

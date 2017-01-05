@@ -8,7 +8,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".InicialActivity"
-    android:background="@android:color/white">
+    android:background="@color/zxing_custom_possible_result_points">
+
+    <Button
+        android:text="QR Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan_button"
+        android:onClick="qr_code"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Digitar Cupom"
@@ -16,25 +25,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/cupom_button"
         android:onClick="digitar_cupom"
-        android:layout_centerVertical="true"
+        android:layout_above="@+id/scan_button"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cupom_fiscal"
-        android:id="@+id/camera_button"
-        android:onClick="ir_camera"
-        android:layout_above="@+id/cupom_button"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="QR Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scan_button"
-        android:layout_below="@+id/cupom_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="qr_code" />
 
 </RelativeLayout>

@@ -713,7 +713,6 @@ int id avancar_button 0x7f0c00a3
 int id beginning 0x7f0c003b
 int id bottom 0x7f0c0029
 int id buttonPanel 0x7f0c0058
-int id camera_button 0x7f0c007f
 int id cancel_action 0x7f0c0090
 int id center 0x7f0c002a
 int id centerCrop 0x7f0c004b
@@ -724,17 +723,17 @@ int id chronometer 0x7f0c0096
 int id clip_horizontal 0x7f0c0035
 int id clip_vertical 0x7f0c0036
 int id cnpj_button 0x7f0c00a0
-int id cnpj_text 0x7f0c0081
+int id cnpj_text 0x7f0c0080
 int id collapseActionView 0x7f0c0040
 int id contentPanel 0x7f0c005e
 int id coo_button 0x7f0c00a1
 int id coo_text 0x7f0c0083
-int id cupom_button 0x7f0c007e
+int id cupom_button 0x7f0c007f
 int id custom 0x7f0c0064
 int id customPanel 0x7f0c0063
 int id dark 0x7f0c0047
 int id data_button 0x7f0c00a2
-int id data_text 0x7f0c0082
+int id data_text 0x7f0c0081
 int id decor_content_parent 0x7f0c006d
 int id default_activity_button 0x7f0c0054
 int id design_bottom_sheet 0x7f0c0086
@@ -748,6 +747,7 @@ int id end 0x7f0c002d
 int id end_padder 0x7f0c009b
 int id enterAlways 0x7f0c001c
 int id enterAlwaysCollapsed 0x7f0c001d
+int id enviar_button 0x7f0c0084
 int id exitUntilCollapsed 0x7f0c001e
 int id expand_activities_button 0x7f0c0052
 int id expanded_menu 0x7f0c0065
@@ -788,7 +788,7 @@ int id progress_circular 0x7f0c0006
 int id progress_horizontal 0x7f0c0007
 int id radio 0x7f0c0068
 int id right 0x7f0c0030
-int id scan_button 0x7f0c0080
+int id scan_button 0x7f0c007e
 int id screen 0x7f0c0023
 int id scroll 0x7f0c001f
 int id scrollIndicatorDown 0x7f0c0062
@@ -838,7 +838,7 @@ int id touch_outside 0x7f0c0085
 int id up 0x7f0c0009
 int id useLogo 0x7f0c001b
 int id valor1_button 0x7f0c009f
-int id valor_text 0x7f0c0084
+int id valor_text 0x7f0c0082
 int id view_offset_helper 0x7f0c000a
 int id wide 0x7f0c0046
 int id withText 0x7f0c0043

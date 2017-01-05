@@ -47,7 +47,7 @@
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/icon"
-        android:label="OcrReaderApp"
+        android:label="Doa a quem doar"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat" >
         <meta-data
