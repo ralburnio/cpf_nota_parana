@@ -59,7 +59,7 @@ MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\ronaldo
 	android:allowBackup
 		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:14:9-38
+		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:14:9-37
 	android:theme
 		ADDED from C:\Users\ronaldo.alburnio\AndroidStudioProjects\ocr-reader-complete\app\src\main\AndroidManifest.xml:17:9-47
 meta-data#com.google.android.gms.version

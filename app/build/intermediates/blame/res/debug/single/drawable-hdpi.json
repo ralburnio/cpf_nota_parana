@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\dqd.png",
+        "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\src\\main\\res\\drawable-hdpi\\dqd.png"
+    },
+    {
         "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\icon.png",
         "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
     }
