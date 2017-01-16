@@ -132,12 +132,12 @@
         "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
@@ -192,12 +192,12 @@
         "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
-        "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "C:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",

@@ -17,7 +17,8 @@
         android:id="@+id/scan_button"
         android:onClick="qr_code"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
 
     <Button
         android:text="Digitar Cupom"
@@ -26,6 +27,26 @@
         android:id="@+id/cupom_button"
         android:onClick="digitar_cupom"
         android:layout_above="@+id/scan_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:text="Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ong_cnpj_text"
+        android:id="@+id/ong_cnpj_button"
+        android:onClick="enviar_ong_cnpj" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/ong_cnpj_text"
+        android:hint="CNPJ da ONG"
+        android:layout_width="180dp"
+        android:inputType="numberDecimal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/scan_button" />
 
 </RelativeLayout>

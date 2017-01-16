@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -36,37 +37,36 @@ import java.util.regex.Pattern;
 
 public class InicialActivity extends Activity {
 
-    private Button scan_button;
+    private Button scan_button, cupom_button;
+    private EditText ong_cnpj_text;
+    private String ong_cnpj_string;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        scan_button = (Button) findViewById(R.id.scan_button);
+        scan_button  = (Button) findViewById(R.id.scan_button);
+        //cupom_button = (Button) findViewById(R.id.cupom_button);
+
+        //scan_button.setVisibility(View.INVISIBLE);
+        //cupom_button.setVisibility(View.INVISIBLE);
         final Activity activity = this;
         scan_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Toast.makeText(activity,"mensagem enviada",Toast.LENGTH_LONG).show();
-
-                FirebaseMessaging fm = FirebaseMessaging.getInstance();
-                fm.send(new RemoteMessage.Builder(/*SENDER_ID + */"@gcm.googleapis.com")
-                        .setMessageId(Integer.toString(1/*msgId.incrementAndGet()*/))
-                        .addData("my_message", "Hello World")
-                        .addData("my_action","SAY_HELLO")
-                        .build());
-
                 IntentIntegrator integrator = new IntentIntegrator(activity);
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
                 integrator.setPrompt("Scan");
                 integrator.setCameraId(0);
-                integrator.setBeepEnabled(false);
+                integrator.setBeepEnabled(true);
                 integrator.setBarcodeImageEnabled(false);
                 integrator.initiateScan();
             }
         });
+
+        ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);
+        ong_cnpj_text.addTextChangedListener(CpfCnpjMasks.insert(ong_cnpj_text));
     }
 
     public void ir_camera(View view) {
@@ -90,7 +90,32 @@ public class InicialActivity extends Activity {
         bundle.putString("valor", "");
         intent.putExtras(bundle);
 
+        bundle.putString("ong_cnpj_string", ong_cnpj_string);
+        intent.putExtras(bundle);
+
         startActivity(intent);
+    }
+
+    public void enviar_ong_cnpj(View view) {
+        ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);
+        if ( ong_cnpj_text.getText().length() >= 18 ) {
+
+            scan_button = (Button) findViewById(R.id.scan_button);
+            cupom_button = (Button) findViewById(R.id.cupom_button);
+
+            scan_button.setVisibility(View.VISIBLE);
+            cupom_button.setVisibility(View.VISIBLE);
+
+            ong_cnpj_string = ong_cnpj_text.getText().toString().replace("/", "")
+                                                                .replace(".", "")
+                                                                .replace("-", "");
+
+        }
+        else {
+            scan_button.setVisibility(View.INVISIBLE);
+            cupom_button.setVisibility(View.INVISIBLE);
+            Toast.makeText(this, "Preencha o CNPJ da ONG", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -110,7 +135,9 @@ public class InicialActivity extends Activity {
                     qrCode = matcher.group(1);
                 }
 
-                DadosNuvem.salva(qrCode, "QR");
+                ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);
+
+                DadosNuvem.salva(qrCode, "QR", ong_cnpj_string);
             }
         }
         else {
