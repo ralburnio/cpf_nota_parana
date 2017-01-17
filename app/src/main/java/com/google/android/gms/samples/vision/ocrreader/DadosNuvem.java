@@ -1,7 +1,6 @@
 package com.google.android.gms.samples.vision.ocrreader;
 
 import android.net.Uri;
-import android.os.Parcel;
 import android.support.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -14,9 +13,6 @@ import com.google.firebase.storage.UploadTask;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Calendar;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by ronaldo.alburnio on 05/01/2017.
