@@ -19,12 +19,15 @@ public class ValidarDadosActivity extends Activity {
 
     private EditText cnpj_text, coo_text, data_text, valor_text;
     private int year_x, month_x, day_x;
+    private String ong_cnpj_string;
     static final int DIALOG_ID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_validar_dados);
+
+        ong_cnpj_string = getIntent().getExtras().getString("ong_cnpj_string");
 
         cnpj_text = (EditText) findViewById(R.id.cnpj_text);
         cnpj_text.addTextChangedListener(CpfCnpjMasks.insert(cnpj_text));
@@ -153,9 +156,6 @@ public class ValidarDadosActivity extends Activity {
     }
 
     public void enviar_dados(View view) {
-        String ong_cpnj_string;
-
-        ong_cpnj_string = getIntent().getExtras().getString("ong_cpnj_string");
 
         DadosNuvem.salva(
                 cnpj_text.getText() + " " +
@@ -163,7 +163,7 @@ public class ValidarDadosActivity extends Activity {
                 data_text.getText() + " " +
                 valor_text.getText().subSequence(2, valor_text.getText().length()),
                 "CUPOM",
-                ong_cpnj_string);
+                ong_cnpj_string);
         Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
     }
 }
