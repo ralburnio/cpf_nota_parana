@@ -1,4 +1,4 @@
-#Tue Jan 17 12:58:47 BRST 2017
+#Tue Jan 17 15:10:53 BRST 2017
 base.0=C\:\\Users\\ronaldo.alburnio\\AndroidStudioProjects\\ocr-reader-complete\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_2bf6172a19076a883dfbab1be3aef8765a1056ab
 renamed.1=classes2.dex
 renamed.0=classes.dex
