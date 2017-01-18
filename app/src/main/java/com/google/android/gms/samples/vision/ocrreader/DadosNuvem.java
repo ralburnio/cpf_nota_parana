@@ -31,7 +31,8 @@ public class DadosNuvem {
         // Create a reference to file name
         Calendar date = Calendar.getInstance();
         String fileName =
-                ong_cnpj + "/" + prefixo +
+                ong_cnpj + "/" +
+                prefixo +
                 FirebaseInstanceId.getInstance().getId() +
                 Integer.toString(date.get(Calendar.YEAR))+
                 Integer.toString(date.get(Calendar.MONTH) + 1) +
