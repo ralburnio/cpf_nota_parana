@@ -2,6 +2,7 @@ package com.google.android.gms.samples.vision.ocrreader;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,14 +21,27 @@ public class InicialActivity extends Activity {
     private static Button scan_button, cupom_button;
     private static EditText ong_cnpj_text;
     private String ong_cnpj_string;
+    SharedPreferences preferencias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         scan_button  = (Button) findViewById(R.id.scan_button);
         cupom_button = (Button) findViewById(R.id.cupom_button);
+        ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);
+        ong_cnpj_text.addTextChangedListener(CpfCnpjMasks.insert(ong_cnpj_text));
+        preferencias = getSharedPreferences("preferencias", this.MODE_PRIVATE);
+        ong_cnpj_string = preferencias.getString("ong","");
+        ong_cnpj_text.setText(ong_cnpj_string);
+        if(ong_cnpj_text.getText().toString().matches(""))
+            Toast.makeText(this, "Preencha o CNPJ da ONG", Toast.LENGTH_LONG).show();
+        else
+        {
+            scan_button.setVisibility(View.VISIBLE);
+            cupom_button.setVisibility(View.VISIBLE);
+        }
+
 
         //scan_button.setVisibility(View.INVISIBLE);
         //cupom_button.setVisibility(View.INVISIBLE);
@@ -37,7 +51,7 @@ public class InicialActivity extends Activity {
             public void onClick(View view) {
                 IntentIntegrator integrator = new IntentIntegrator(activity);
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-                integrator.setPrompt("Scan");
+                integrator.setPrompt("Aponte para o QR code");
                 integrator.setCameraId(0);
                 integrator.setBeepEnabled(true);
                 integrator.setBarcodeImageEnabled(false);
@@ -45,8 +59,7 @@ public class InicialActivity extends Activity {
             }
         });
 
-        ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);
-        ong_cnpj_text.addTextChangedListener(CpfCnpjMasks.insert(ong_cnpj_text));
+
     }
 
     public void ir_camera(View view) {
@@ -81,15 +94,21 @@ public class InicialActivity extends Activity {
             scan_button.setVisibility(View.VISIBLE);
             cupom_button.setVisibility(View.VISIBLE);
 
+
             ong_cnpj_string = ong_cnpj_text.getText().toString().replace("/", "")
                                                                 .replace(".", "")
                                                                 .replace("-", "");
+            SharedPreferences.Editor editor = preferencias.edit();
+
+            editor.putString("ong", ong_cnpj_string);
+            editor.commit();
         }
         else {
             scan_button.setVisibility(View.INVISIBLE);
             cupom_button.setVisibility(View.INVISIBLE);
             Toast.makeText(this, "Preencha o CNPJ da ONG", Toast.LENGTH_LONG).show();
         }
+
     }
 
     @Override
@@ -109,6 +128,14 @@ public class InicialActivity extends Activity {
 
                 DadosNuvem.salva(qrCode, "QR", ong_cnpj_string);
                 Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
+
+                IntentIntegrator integrator = new IntentIntegrator(this);
+                integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
+                integrator.setPrompt("Aponte para o QR code");
+                integrator.setCameraId(0);
+                integrator.setBeepEnabled(true);
+                integrator.setBarcodeImageEnabled(false);
+                integrator.initiateScan();
             }
         }
         else {

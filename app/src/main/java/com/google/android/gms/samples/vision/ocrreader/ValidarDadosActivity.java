@@ -156,15 +156,21 @@ public class ValidarDadosActivity extends Activity {
     }
 
     public void enviar_dados(View view) {
+        if(cnpj_text.getText().toString().matches("")  || coo_text.getText().toString().matches("") || data_text.getText().toString().matches("") || valor_text.getText().toString().matches(""))
+            Toast.makeText(this, "Preencha os dados adequadamente antes de enviar",Toast.LENGTH_LONG).show();
+        else {
+            DadosNuvem.salva(
+                    cnpj_text.getText() + " " +
+                            coo_text.getText() + " " +
+                            data_text.getText() + " " +
+                            valor_text.getText().subSequence(2, valor_text.getText().length()),
+                    "CUPOM",
+                    ong_cnpj_string);
+            Toast.makeText(this, "Enviado com sucesso", Toast.LENGTH_LONG).show();
+            valor_text.setText("");
+            coo_text.setText("");
 
-        DadosNuvem.salva(
-                cnpj_text.getText() + " " +
-                coo_text.getText() + " " +
-                data_text.getText() + " " +
-                valor_text.getText().subSequence(2, valor_text.getText().length()),
-                "CUPOM",
-                ong_cnpj_string);
-        Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
+        }
     }
 }
 
