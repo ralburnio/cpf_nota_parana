@@ -1,4 +1,4 @@
-#Wed Jan 18 16:41:26 BRST 2017
+#Wed Jan 18 21:56:48 BRST 2017
 base.0=C\:\\Users\\Leonardo\\AndroidStudioProjects\\cpf_nota_parana\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_90169eabd58196fbb31ce113f9f66b91f3593216
 renamed.1=classes2.dex
 renamed.0=classes.dex

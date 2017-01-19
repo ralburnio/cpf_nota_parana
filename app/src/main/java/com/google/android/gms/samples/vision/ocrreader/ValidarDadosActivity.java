@@ -159,7 +159,7 @@ public class ValidarDadosActivity extends Activity {
         if(cnpj_text.getText().toString().matches("")  || coo_text.getText().toString().matches("") || data_text.getText().toString().matches("") || valor_text.getText().toString().matches(""))
             Toast.makeText(this, "Preencha os dados adequadamente antes de enviar",Toast.LENGTH_LONG).show();
         else {
-            DadosNuvem.salva(
+            DadosNuvem.salva_dados(
                     cnpj_text.getText() + " " +
                             coo_text.getText() + " " +
                             data_text.getText() + " " +
@@ -169,6 +169,7 @@ public class ValidarDadosActivity extends Activity {
             Toast.makeText(this, "Enviado com sucesso", Toast.LENGTH_LONG).show();
             valor_text.setText("");
             coo_text.setText("");
+            coo_text.requestFocus();
 
         }
     }

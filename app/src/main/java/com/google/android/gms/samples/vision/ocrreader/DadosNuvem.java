@@ -2,9 +2,12 @@ package com.google.android.gms.samples.vision.ocrreader;
 
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -60,6 +63,17 @@ public class DadosNuvem {
                 Uri downloadUrl = taskSnapshot.getDownloadUrl();
             }
         });
+
+        return 0;
+    }
+
+    public static int salva_dados(final String texto, String prefixo, String ong_cnpj){
+
+        //Removendo caracteres especiais para gerar o nome da instancia
+        String nome = texto.replaceAll(" ","").replaceAll("/","").replaceAll("-","").replaceAll(",","").replaceAll("\\.","");
+
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ocr-reader-complete.firebaseio.com").child(ong_cnpj).child(prefixo+nome);
+        ref.setValue(texto);
 
         return 0;
     }

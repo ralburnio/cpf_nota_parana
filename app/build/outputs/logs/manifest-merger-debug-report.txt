@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:3:5-62
 		INJECTED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml
@@ -20,13 +20,20 @@ ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\AndroidManifest.xml:24:5-26:36
 	android:name
 		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:6:19-57
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:7:5-83
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:8:5-65
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:9:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.journeyapps\zxing-android-embedded\3.2.0\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:8:22-62
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:9:22-62
 application
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:10:5-43:19
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:11:5-44:19
 MERGED from [com.google.android.gms:play-services-vision:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.8.0\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
 MERGED from [com.android.support:design:24.2.1] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
@@ -49,66 +56,66 @@ MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Leonardo\Andro
 MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:16:9-40
 	android:supportsRtl
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:17:9-35
 	android:hardwareAccelerated
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:14:9-43
 	android:fullBackupContent
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:12:9-42
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:13:9-42
 	android:allowBackup
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:15:9-37
 	android:theme
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:17:9-47
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:18:9-47
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:18:9-20:69
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:19:9-21:69
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:20:13-66
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:21:13-66
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:19:13-58
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:20:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:21:9-23:35
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:22:9-24:35
 	android:value
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:23:13-32
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:24:13-32
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:22:13-70
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:23:13-70
 activity#com.google.android.gms.samples.vision.ocrreader.InicialActivity
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:25:9-30:20
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:26:9-31:20
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:25:19-50
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:26:19-50
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:26:13-29:29
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:29:27-74
 activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:31:9-33:44
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:32:9-34:44
 	android:label
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:33:13-41
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:34:13-41
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:32:13-47
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:33:13-47
 activity#com.google.android.gms.samples.vision.ocrreader.ValidarDadosActivity
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:34:9-58
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:35:9-58
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:34:19-55
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:35:19-55
 service#com.google.android.gms.samples.vision.ocrreader.firebase.MessagingService
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:36:9-41:19
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:37:9-42:19
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:37:13-54
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:38:13-54
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:38:13-40:29
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:39:13-41:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:39:25-75
+		ADDED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml:40:25-75
 uses-sdk
 INJECTED from C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services-vision:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.8.0\AndroidManifest.xml:3:5-42
@@ -126,6 +133,8 @@ MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\Leonardo\AndroidS
 MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-database:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.8.0\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.8.0\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\AndroidManifest.xml:17:5-42
@@ -201,12 +210,6 @@ ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Leonardo\Andr
 		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.8.0\AndroidManifest.xml:23:18-87
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.8.0\AndroidManifest.xml:20:5-66
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:20:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.8.0\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Leonardo\AndroidStudioProjects\cpf_nota_parana\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.8.0\AndroidManifest.xml:21:5-78

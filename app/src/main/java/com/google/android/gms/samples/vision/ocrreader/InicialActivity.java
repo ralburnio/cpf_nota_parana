@@ -126,7 +126,7 @@ public class InicialActivity extends Activity {
                     qrCode = matcher.group(1);
                 }
 
-                DadosNuvem.salva(qrCode, "QR", ong_cnpj_string);
+                DadosNuvem.salva_dados(qrCode, "QR", ong_cnpj_string);
                 Toast.makeText(this, "Enviado com sucesso",Toast.LENGTH_LONG).show();
 
                 IntentIntegrator integrator = new IntentIntegrator(this);
