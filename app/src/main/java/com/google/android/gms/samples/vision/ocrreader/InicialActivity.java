@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -27,6 +28,7 @@ public class InicialActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        DadosNuvem.ping_firebase();
         scan_button  = (Button) findViewById(R.id.scan_button);
         cupom_button = (Button) findViewById(R.id.cupom_button);
         ong_cnpj_text = (EditText) findViewById(R.id.ong_cnpj_text);

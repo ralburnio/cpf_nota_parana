@@ -23,6 +23,16 @@ import java.util.Calendar;
 
 public class DadosNuvem {
 
+    private static FirebaseDatabase base;
+
+    public static FirebaseDatabase getDatabase() {
+        if (base == null) {
+            base = FirebaseDatabase.getInstance();
+            base.setPersistenceEnabled(true);
+        }
+        return base;
+    }
+
     public static int salva(final String texto, String prefixo, String ong_cnpj){
 
         // Create a reference
@@ -66,13 +76,19 @@ public class DadosNuvem {
 
         return 0;
     }
+    public static void ping_firebase(){
+
+        getDatabase().getInstance().getReferenceFromUrl("https://ocr-reader-complete.firebaseio.com").getKey();
+    }
 
     public static int salva_dados(final String texto, String prefixo, String ong_cnpj){
 
         //Removendo caracteres especiais para gerar o nome da instancia
         String nome = texto.replaceAll(" ","").replaceAll("/","").replaceAll("-","").replaceAll(",","").replaceAll("\\.","");
 
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ocr-reader-complete.firebaseio.com").child(ong_cnpj).child(prefixo+nome);
+//                getReferenceFromUrl("https://ocr-reader-complete.firebaseio.com/.info/connected");
+
+        DatabaseReference ref = getDatabase().getInstance().getReferenceFromUrl("https://ocr-reader-complete.firebaseio.com").child(ong_cnpj).child(prefixo+nome);
         ref.setValue(texto);
 
         return 0;
